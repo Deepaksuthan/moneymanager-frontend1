@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import styled from "styled-components";
 import bg from "./img/bg.png";
 import { MainLayout } from "./styles/layouts";
