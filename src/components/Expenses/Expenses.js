@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useGlobalContext } from "../../content/GlobalContext";
 import { InnerLayout } from "../../styles/layouts";
-import Form from "../Form/Form";
+// import Form from "../Form/Form";
 import IncomeItem from "../IncomeItem/IncomeItem";
 import ExpenseForm from "./ExpenseForm";
 
 function Expenses() {
-  const {addIncome,expenses, getExpenses, deleteExpense, totalExpenses} = useGlobalContext()
+  const {expenses, getExpenses, deleteExpense, totalExpenses} = useGlobalContext()
 
   useEffect(() =>{
     getExpenses()

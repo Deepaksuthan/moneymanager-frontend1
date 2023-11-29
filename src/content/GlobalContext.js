@@ -17,6 +17,7 @@ export const Globalprovider = ({ children }) => {
       .post(`${BASE_URL}add-income`, income)
       .catch((err) => {
         setError(err.response.data.message);
+        console.log(response);
       });
     getIncomes();
   };
@@ -29,6 +30,7 @@ export const Globalprovider = ({ children }) => {
   const deleteIncome = async (id) => {
     const res = await axios.delete(`${BASE_URL}delete-income/${id}`);
     getIncomes();
+    console.log(res);
   };
 
   const totalIncome = () => {
@@ -46,6 +48,7 @@ export const Globalprovider = ({ children }) => {
       .post(`${BASE_URL}add-expense`, income)
       .catch((err) => {
         setError(err.response.data.message);
+        console.log(response);
       });
     getExpenses();
   };
@@ -59,6 +62,7 @@ export const Globalprovider = ({ children }) => {
   const deleteExpense = async (id) => {
     const res = await axios.delete(`${BASE_URL}delete-expense/${id}`);
     getExpenses();
+    console.log(res);
   };
 
   const totalExpenses = () => {
