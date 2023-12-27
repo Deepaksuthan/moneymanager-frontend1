@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useContext, useState } from "react";
 
-const BASE_URL = "https://moneymanager-0im6.onrender.com";
+const BASE_URL = "https://moneymanagernew.onrender.com";
 
 const GlobalContext = React.createContext();
 
